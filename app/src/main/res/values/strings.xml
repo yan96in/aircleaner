@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">新松</string>
+    <!-- -->
+    <string name="xxx">xxx</string>
+    <string name="custom">自定义</string>
+    <!-- 第三方-->
+    <string name="weibo">微博</string>
+    <string name="qq">QQ</string>
+    <string name="weixin">微信</string>
+    <!-- 底部菜单-->
+    <string name="weather">天气</string>
+    <string name="scene">时景</string>
+    <string name="rank">排名</string>
+    <string name="me">我</string>
+    <!-- user info -->
+    <string name="phone_number">手机号码</string>
+    <string name="password">密码</string>
+    <string name="nickname">昵称</string>
+    <string name="name">姓名</string>
+    <string name="id_card">身份证号</string>
+    <string name="birthday">出生日期</string>
+    <string name="sex">性别</string>
+    <string name="profession">职业</string>
+    <!-- 操作 -->
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="code">验证码</string>
+    <string name="sure">确定</string>
+    <string name="send">发送</string>
+    <string name="commit">提交</string>
+    <string name="next">下一步</string>
+    <!--device info-->
+    <string name="device_name">设备名称</string>
+    <string name="device_code">设备编码</string>
+    <string name="account_auth">账号权限</string>
+    <string name="device_scene">设备场景</string>
+    <string name="scene_upload">设备上传</string>
+    <string name="use_people">使用对象</string>
+    <string name="use_environment">使用环境</string>
+    <string name="use_area">使用面积</string>
+    <string name="use_city">使用城市</string>
+    <string name="authed_account">授权账户</string>
+    <!-- 设备场景 -->
+    <string name="bed_room">卧室</string>
+    <string name="living_room">客厅</string>
+    <string name="office_room">办公室</string>
+    <string name="conference_room">会议室</string>
+    <string name="hall">大厅</string>
+    <string name="class_room">教室</string>
+    <!-- 使用对象-->
+    <string name="parent">父母</string>
+    <string name="child">孩子</string>
+    <string name="colleague">同事</string>
+    <string name="baby">婴儿</string>
+    <string name="gravida">孕妇</string>
+    <string name="aged">老人</string>
+    <!--设备管理-->
+    <string name="device">设备</string>
+    <string name="device_manage">设备管理</string>
+    <string name="my_device">我的设备</string>
+    <string name="add_device">添加设备</string>
+    <string name="add_machine">添加机器</string>
+    <string name="del_device">删除设备</string>
+    <!-- 权限管理-->
+    <string name="auth_level1">一级权限</string>
+    <string name="auth_level2">二级权限</string>
+    <string name="auth_level3">三级权限</string>
+    <string name="unauth">未授权</string>
+    <string name="apply_auth">申请权限</string>
+    <string name="del_auth">删除授权</string>
+    <!-- 服务-->
+    <string name="apply_service">申请服务</string>
+    <string name="waiting">等待处理</string>
+    <string name="doing">处理中</string>
+    <string name="done">处理完成</string>
+    <string name="service_number">服务编号</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

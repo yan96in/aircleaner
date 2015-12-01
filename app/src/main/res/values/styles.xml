@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- 0dp的View -->
+    <style name="BaseView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- -->
+    <style name="PaadingHorizontal">
+        <item name="android:paddingLeft">@dimen/padding_16dp</item>
+        <item name="android:paddingRight">@dimen/padding_16dp</item>
+    </style>
+    <style name="PaadingVertical">
+        <item name="android:paddingTop">@dimen/padding_16dp</item>
+        <item name="android:paddingBottom">@dimen/padding_16dp</item>
+    </style>
+    <!-- -->
+    <style name="NormalTxt">
+
+    </style>
+    <!-- -->
+    <style name="TitleTxt">
+        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- -->
+    <style name="SubTitleTxt">
+        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!---->
+    <style name="EditText">
+        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="Btn">
+        <item name="android:background">@drawable/shape_btn</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- -->
+    <style name="TxtBtn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

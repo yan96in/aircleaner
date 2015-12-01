@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.somputon.aircleaner" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" >
+        </activity>
+        <activity android:name=".activity.RegisterActivity" >
+        </activity>
+        <activity android:name=".activity.SendSMSActivity" >
+        </activity>
+        <activity android:name=".activity.SetPasswordActivity" >
+        </activity>
+        <activity android:name=".activity.InputDetailActivity" >
+        </activity>
+        <activity android:name=".activity.MyDeviceActivity" >
+        </activity>
+        <activity android:name=".activity.DeviceNameActivity" >
+        </activity>
+        <activity android:name=".activity.QRActivity" >
+        </activity>
+        <activity android:name=".activity.DeviceSceneActivity" >
+        </activity>
+        <activity android:name=".activity.SceneUploadActivity" >
+        </activity>
+        <activity android:name=".activity.ApplyTargetActivity" >
+        </activity>
+        <activity android:name=".activity.ApplyEnvironmentActivity" >
+        </activity>
+        <activity android:name=".activity.ApplyAreaActivity" >
+        </activity>
+        <activity android:name=".activity.ApplyCityActivity" >
+        </activity>
+        <activity android:name=".activity.DeviceManageActivity" >
+        </activity>
+        <activity android:name=".activity.CorrelationDeviceActivity" >
+        </activity>
+        <activity android:name=".activity.AskForPermissionActivity" >
+        </activity>
+        <activity android:name=".activity.PermitAccountActivity" >
+        </activity>
+        <activity android:name=".activity.SetPermissionActivity" >
+        </activity>
+    </application>
+
+</manifest>
