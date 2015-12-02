@@ -1,5 +1,8 @@
 <resources>
-
+    <!-- 重写toolbar，解决左边留白问题-->
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+    </style>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -23,26 +26,28 @@
     </style>
     <!-- -->
     <style name="NormalTxt">
-
+        <item name="android:textSize">@dimen/txt_18sp</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
     <!-- -->
     <style name="TitleTxt">
-        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
     <!-- -->
     <style name="SubTitleTxt">
-        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
         <item name="android:textColor">@color/black</item>
     </style>
     <!---->
     <style name="EditText">
-        <item name="android:textSize">@dimen/txt_17sp</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
         <item name="android:background">@null</item>
     </style>
     <style name="Btn">
         <item name="android:background">@drawable/shape_btn</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
     </style>
     <!-- -->
     <style name="TxtBtn">

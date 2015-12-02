@@ -32,14 +32,14 @@
     <!--device info-->
     <string name="device_name">设备名称</string>
     <string name="device_code">设备编码</string>
-    <string name="account_auth">账号权限</string>
+    <string name="account_premit">账号权限</string>
     <string name="device_scene">设备场景</string>
     <string name="scene_upload">设备上传</string>
-    <string name="use_people">使用对象</string>
+    <string name="use_target">使用对象</string>
     <string name="use_environment">使用环境</string>
     <string name="use_area">使用面积</string>
     <string name="use_city">使用城市</string>
-    <string name="authed_account">授权账户</string>
+    <string name="permitted_account">授权账户</string>
     <!-- 设备场景 -->
     <string name="bed_room">卧室</string>
     <string name="living_room">客厅</string>

@@ -5,6 +5,8 @@
     <!-- -->
     <dimen name="radius_btn">10dp</dimen>
     <!-- -->
+    <dimen name="margin">29dp</dimen>
+    <!-- -->
     <dimen name="title_height">46dp</dimen>
     <!-- -->
     <dimen name="padding_16dp">16dp</dimen>
@@ -12,6 +14,7 @@
     <dimen name="padding_28dp">28dp</dimen>
     <!-- -->
     <dimen name="normal_txt">14sp</dimen>
-    <dimen name="txt_17sp">17sp</dimen>
+    <dimen name="txt_18sp">18sp</dimen>
     <dimen name="txt_12sp">12sp</dimen>
+    <dimen name="txt_33sp">33sp</dimen>
 </resources>

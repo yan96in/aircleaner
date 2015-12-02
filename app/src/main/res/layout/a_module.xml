@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!-- layout_widthPercent、layout_heightPercent、
+layout_marginPercent、layout_marginLeftPercent、
+layout_marginTopPercent、layout_marginRightPercent、
+layout_marginBottomPercent、layout_marginStartPercent、layout_marginEndPercent。-->
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"

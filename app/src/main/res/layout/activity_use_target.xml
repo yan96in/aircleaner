@@ -26,7 +26,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/bed_room" />
+                android:text="@string/parent" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -44,7 +44,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/living_room" />
+                android:text="@string/child" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -62,7 +62,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/office_room" />
+                android:text="@string/colleague" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -80,7 +80,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/conference_room" />
+                android:text="@string/baby" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -98,7 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/hall" />
+                android:text="@string/gravida" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -116,7 +116,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="570"
-                android:text="@string/class_room" />
+                android:text="@string/aged" />
 
             <ImageView
                 android:layout_width="0dp"
