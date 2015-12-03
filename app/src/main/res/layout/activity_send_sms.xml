@@ -1,32 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-</android.support.percent.PercentRelativeLayout>
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/SubTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="120"
+            android:text="填写短信验证码" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="56"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="185"
+                android:gravity="center"
+                android:text="@string/phone_number"
+                android:textColor="@color/gray" />
+
+            <EditText
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="450"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:editable="false" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="56"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="185"
+                android:gravity="center"
+                android:text="@string/code"
+                android:textColor="@color/gray" />
+            <!-- todo-->
+            <EditText
+                style="@style/EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="230" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               style="@style/CustomBtn"
+                android:singleLine="true"
+                android:layout_weight="230"
+                android:text="读秒倒计时"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="250" />
+
+        <Button
+            style="@style/Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="610" />
+    </LinearLayout>
+
+</LinearLayout>

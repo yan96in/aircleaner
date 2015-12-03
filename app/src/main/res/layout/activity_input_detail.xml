@@ -1,32 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%"/>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-</android.support.percent.PercentRelativeLayout>
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin">
+
+        <TableRow android:layout_weight="30" />
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/nickname" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/password" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="225" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="45"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
+                android:visibility="visible" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="135"
+                style="@style/NormalTxt"
+                android:textSize="@dimen/normal_txt"
+                android:paddingLeft="8dp"
+                android:text="显示密码"/>
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/phone_number" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="qq" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/id_card" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/birthday" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/sex" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:text="@string/profession" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="405" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="86">
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="84">
+
+            <Button
+                style="@style/Btn"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sure" />
+        </TableRow>
+
+        <TableRow android:layout_weight="88" />
+    </TableLayout>
+</LinearLayout>

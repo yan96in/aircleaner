@@ -1,32 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <View
-        android:layout_width="0dp"
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
+        android:layout_weight="60"
+        android:background="@color/light_gray">
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加相关账户"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/txt_18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/add"
+            android:background="@drawable/add"
+            android:drawableRight="@drawable/add" />
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%"/>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-</android.support.percent.PercentRelativeLayout>
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="686">
+
+        <TableRow android:layout_weight="28" />
+
+
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/permit_level1" />
+           
+        </TableRow>
+        <include layout="@layout/line" />
+
+
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/xxx" />
+            <!-- todo 修正按钮大小 改成动画显示-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="155"
+                android:background="@color/red"
+                android:text="@string/delete" />
+
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/xxx" />
+
+            <!-- todo 修正按钮大小 改成动画显示-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="155"
+                android:background="@color/red"
+                android:text="@string/delete" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/permit_level2" />
+
+         
+        </TableRow>
+
+        <include layout="@layout/line" />
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/xxx" />
+
+            <!-- todo 修正按钮大小 改成动画显示-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="155"
+                android:background="@color/red"
+                android:text="@string/delete" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/xxx" />
+
+            <!-- todo 修正按钮大小 改成动画显示-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="155"
+                android:background="@color/red"
+                android:text="@string/delete" />
+        </TableRow>
+
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/permit_level3" />
+
+         
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/xxx" />
+
+            <!-- todo 修正按钮大小 改成动画显示-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="155"
+                android:background="@color/red"
+                android:text="@string/delete" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="480"
+                android:text="@string/unauth" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="84">
+
+            <Button
+                style="@style/Btn"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sure" />
+        </TableRow>
+
+        <TableRow android:layout_weight="88" />
+    </TableLayout>
+</LinearLayout>

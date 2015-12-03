@@ -4,29 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:layout_width="0dp"
+
+
+    <include
+        layout="@layout/bottom"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%"/>
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
+        android:layout_alignParentBottom="true" />
 </android.support.percent.PercentRelativeLayout>

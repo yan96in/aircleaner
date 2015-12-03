@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">新松</string>
+    <string name="app_welcome">欢迎使用新松关怀！</string>
     <!-- -->
     <string name="xxx">XXXXXXXXXX</string>
     <string name="custom">自定义</string>
@@ -76,12 +77,12 @@
     <string name="add_machine">添加机器</string>
     <string name="del_device">删除设备</string>
     <!-- 权限管理-->
-    <string name="auth_level1">一级权限</string>
-    <string name="auth_level2">二级权限</string>
-    <string name="auth_level3">三级权限</string>
+    <string name="permit_level1">一级权限</string>
+    <string name="permit_level2">二级权限</string>
+    <string name="permit_level3">三级权限</string>
     <string name="unauth">未授权</string>
-    <string name="apply_auth">申请权限</string>
-    <string name="del_auth">删除授权</string>
+    <string name="apply_permission">申请权限</string>
+    <string name="del_permission">删除授权</string>
     <!-- 服务-->
     <string name="apply_service">申请服务</string>
     <string name="waiting">等待处理</string>

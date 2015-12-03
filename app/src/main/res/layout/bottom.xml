@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bottom_black"
+    android:orientation="horizontal">
 
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/weather"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_16dp"
+        android:text="@string/weather"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#504b48" />
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/scene"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_16dp"
+        android:text="@string/scene"
+
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#504b48" />
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:button="@null"
+
+        android:drawableTop="@drawable/rank"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_16dp"
+        android:text="@string/rank"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#504b48" />
+
+    <RadioButton
+        android:layout_width="0dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+
+        android:drawableTop="@drawable/me"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_16dp"
+        android:text="@string/me"
+
+        android:textColor="@color/white" />
 </LinearLayout>

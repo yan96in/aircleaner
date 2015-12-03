@@ -10,6 +10,6 @@ public class ApplyEnvironmentActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apply_environment);
+        setContentView(R.layout.activity_use_environment);
     }
 }

@@ -15,11 +15,11 @@
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin">
 
-        <TableRow android:layout_weight="1"></TableRow>
+        <TableRow android:layout_weight="30"></TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -30,14 +30,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -48,14 +51,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -66,14 +72,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -84,14 +93,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -102,14 +114,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -120,14 +135,17 @@
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="65"
+                android:adjustViewBounds="true"
+                android:src="@drawable/clicked"
                 android:visibility="visible" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="54">
 
             <TextView
                 style="@style/NormalTxt"
@@ -138,12 +156,15 @@
             <EditText
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@null" />
+                android:background="@null"
+                android:singleLine="true" />
         </TableRow>
 
         <include layout="@layout/line" />
 
-        <TableRow android:layout_weight="1">
+        <TableRow android:layout_weight="270" />
+
+        <TableRow android:layout_weight="84">
 
             <Button
                 style="@style/Btn"
@@ -153,6 +174,6 @@
                 android:text="@string/sure" />
         </TableRow>
 
-        <TableRow android:layout_weight="5" />
+        <TableRow android:layout_weight="88" />
     </TableLayout>
 </LinearLayout>

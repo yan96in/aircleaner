@@ -10,6 +10,6 @@ public class ApplyCityActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_apply_city);
+        setContentView(R.layout.activity_use_city);
     }
 }

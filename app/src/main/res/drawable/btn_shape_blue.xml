@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+    <!-- 定义间隔-->
+    <!--  <stroke
+        android:width="8dp"
+        android:color="@color/black" />-->
     <solid android:color="@color/blue" />
-    <corners android:radius="@dimen/radius_btn" />
+    <corners android:radius="@dimen/radius_btn_10" />
     <padding />
 </shape>
