@@ -1,4 +1,4 @@
-package cn.somputon.aircleaner.utils;
+package cn.somputon.aircleaner.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

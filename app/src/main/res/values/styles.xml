@@ -26,7 +26,7 @@
         <item name="android:paddingTop">@dimen/padding_16dp</item>
         <item name="android:paddingBottom">@dimen/padding_16dp</item>
     </style>
-    <!-- -->
+    <!--文本 -->
     <style name="NormalTxt">
         <item name="android:textSize">@dimen/txt_16sp</item>
         <item name="android:gravity">center_vertical</item>
@@ -49,7 +49,15 @@
         <item name="android:background">@null</item>
     </style>
 
-    <style name="Btn">
+    <style name="ListTxt" parent="NormalTxt">
+        <item name="android:paddingLeft">@dimen/padding_16dp</item>
+    </style>
+    <!--按钮-->
+    <style name="BaseButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_18sp</item>
+    </style>
+    <style name="Btn" parent="BaseButtonStyle">
         <item name="android:background">@drawable/btn_shape_blue</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">@dimen/txt_18sp</item>
@@ -65,9 +73,12 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_gravity">center</item>
     </style>
-
-    <style name="ListTxt" parent="NormalTxt">
-        <item name="android:drawableRight">@drawable/preview</item>
-        <item name="android:paddingLeft">@dimen/padding_16dp</item>
+    <!-- popupwindow按钮-->
+    <style name="PopupWindowButtonStyle">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:textSize">@dimen/txt_21sp</item>
+        <item name="android:background">@drawable/btn_shape_popup_window</item>
+        <item name="android:textColor">@color/dark_gray</item>
     </style>
 </resources>

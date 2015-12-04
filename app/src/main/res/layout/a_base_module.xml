@@ -44,7 +44,7 @@
             android:background="@drawable/circle_img_shape"
             android:src="@drawable/weixin"/>
         <!-- test circleview-->
-        <cn.somputon.aircleaner.utils.CircleImageView
+        <cn.somputon.aircleaner.view.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/profile_image"
             android:layout_width="96dp"

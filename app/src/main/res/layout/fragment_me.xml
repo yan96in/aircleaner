@@ -27,7 +27,7 @@
         android:layout_weight="200"
         android:background="@color/white">
 
-        <cn.somputon.aircleaner.utils.CircleImageView
+        <cn.somputon.aircleaner.view.CircleImageView
             android:id="@+id/head_photo"
             android:layout_width="80dp"
             android:layout_height="80dp"
