@@ -22,6 +22,8 @@
     <string name="birthday">出生日期</string>
     <string name="sex">性别</string>
     <string name="profession">职业</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
     <!-- 操作 -->
     <string name="register">注册</string>
     <string name="login">登录</string>
@@ -84,10 +86,31 @@
     <string name="apply_permission">申请权限</string>
     <string name="del_permission">删除授权</string>
     <!-- 服务-->
+    <string name="my_service">我的服务</string>
     <string name="apply_service">申请服务</string>
     <string name="waiting">等待处理</string>
     <string name="doing">处理中</string>
     <string name="done">处理完成</string>
     <string name="service_number">服务编号</string>
-
+    <string name="service_query">服务查询</string>
+    <string name="complain_or_advice">投诉建议</string>
+    <!-- 报修-->
+    <string name="fault_repair">故障报修</string>
+    <string name="change_filter_screen">更换滤网</string>
+    <string name="machine_clean">机器清洗</string>
+    <string name="comprehensive_service">综合服务</string>
+    <!-- 故障-->
+<string name="fault_type">故障类型</string>
+    <string name="fault_describe">故障描述</string>
+    <!-- 账号管理 -->
+    <string name="input_info">完善信息</string>
+    <string name="change_password">修改密码</string>
+    <string name="credit_query">积分查询</string>
+    <string name="credit_obtain">获取积分</string>
+    <string name="correlation_account">关联账户</string>
+    <!-- 订单管理-->
+    <string name="my_order">我的订单</string>
+    <string name="order_number">订单编号</string>
+    <string name="order_done">订单已处理</string>
+    <string name="order_send">快件已发出</string>
 </resources>

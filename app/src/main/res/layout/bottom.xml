@@ -11,8 +11,8 @@
         android:layout_weight="1"
         android:button="@null"
         android:drawableTop="@drawable/weather"
-        android:gravity="center"
-        android:paddingTop="@dimen/padding_16dp"
+        android:gravity="top|center"
+        android:paddingTop="8dp"
         android:text="@string/weather"
         android:textColor="@color/white" />
 
@@ -28,8 +28,8 @@
         android:layout_weight="1"
         android:button="@null"
         android:drawableTop="@drawable/scene"
-        android:gravity="center"
-        android:paddingTop="@dimen/padding_16dp"
+        android:gravity="top|center"
+        android:paddingTop="8dp"
         android:text="@string/scene"
 
         android:textColor="@color/white" />
@@ -45,10 +45,10 @@
 
         android:layout_weight="1"
         android:button="@null"
-
         android:drawableTop="@drawable/rank"
-        android:gravity="center"
-        android:paddingTop="@dimen/padding_16dp"
+
+        android:gravity="top|center"
+        android:paddingTop="8dp"
         android:text="@string/rank"
         android:textColor="@color/white" />
 
@@ -63,10 +63,10 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:button="@null"
-
         android:drawableTop="@drawable/me"
-        android:gravity="center"
-        android:paddingTop="@dimen/padding_16dp"
+
+        android:gravity="top|center"
+        android:paddingTop="8dp"
         android:text="@string/me"
 
         android:textColor="@color/white" />

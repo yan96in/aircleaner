@@ -15,62 +15,98 @@
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="30" />
-        <include
-            layout="@layout/line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            style="@style/NormalTxt"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
-            android:drawableRight="@drawable/expander_open"
-            android:paddingLeft="@dimen/padding_16dp"
-            android:paddingRight="@dimen/padding_16dp"
-            android:text="@string/fault_type" />
 
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
-            style="@style/NormalTxt"
+            style="@style/ListTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="90"
-            android:drawableRight="@drawable/expander_open"
-            android:paddingLeft="@dimen/padding_16dp"
-            android:paddingRight="@dimen/padding_16dp"
-            android:text="@string/fault_describe" />
+            android:textColor="@color/gray"
+            android:text="@string/input_info" />
 
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <View
+
+        <TextView
+            style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="350" />
+            android:layout_weight="90"
+            android:drawableRight="@drawable/preview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/change_password"
+            android:textColor="@color/gray" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:drawableRight="@drawable/preview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/credit_query"
+            android:textColor="@color/gray" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:drawableRight="@drawable/preview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/credit_obtain"
+
+            android:textColor="@color/gray" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:drawableRight="@drawable/preview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/correlation_account"
+            android:textColor="@color/gray" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="83" />
-        <Button
-            style="@style/Btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/commit"/>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="436" />
+            android:layout_weight="715" />
     </LinearLayout>
 </LinearLayout>

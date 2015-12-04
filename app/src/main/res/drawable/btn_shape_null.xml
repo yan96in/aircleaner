@@ -8,6 +8,6 @@
     <!-- todo 设置透明底色-->
     <solid android:color="@android:color/primary_text_dark_nodisable" />
     <corners android:radius="@dimen/radius_btn_10" />
-    <padding  android:top="10dp"
+    <padding
         />
 </shape>

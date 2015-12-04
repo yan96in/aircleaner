@@ -1,7 +1,8 @@
 <resources>
     <!-- 重写toolbar，解决左边留白问题-->
     <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
-        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+        <item name="contentInsetStart">0dp</item>
+        <!-- 设置该属性解决空白部分-->
     </style>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -20,6 +21,7 @@
         <item name="android:paddingLeft">@dimen/padding_16dp</item>
         <item name="android:paddingRight">@dimen/padding_16dp</item>
     </style>
+
     <style name="PaddingVertical">
         <item name="android:paddingTop">@dimen/padding_16dp</item>
         <item name="android:paddingBottom">@dimen/padding_16dp</item>
@@ -28,7 +30,6 @@
     <style name="NormalTxt">
         <item name="android:textSize">@dimen/txt_16sp</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:paddingLeft">@dimen/padding_16dp</item>
     </style>
     <!-- -->
     <style name="TitleTxt">
@@ -47,6 +48,7 @@
         <item name="android:textSize">@dimen/txt_18sp</item>
         <item name="android:background">@null</item>
     </style>
+
     <style name="Btn">
         <item name="android:background">@drawable/btn_shape_blue</item>
         <item name="android:textColor">@color/white</item>
@@ -62,5 +64,10 @@
     <style name="TxtBtn">
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ListTxt" parent="NormalTxt">
+        <item name="android:drawableRight">@drawable/preview</item>
+        <item name="android:paddingLeft">@dimen/padding_16dp</item>
     </style>
 </resources>

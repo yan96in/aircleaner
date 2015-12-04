@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,58 +16,37 @@
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="30" />
-        <include
-            layout="@layout/line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
-            style="@style/NormalTxt"
-            android:paddingLeft="@dimen/padding_16dp"
-            android:paddingRight="@dimen/padding_16dp"
-            android:drawableRight="@drawable/preview"
-            android:text="@string/apply_service"/>
 
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
+            style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="90"
-            style="@style/NormalTxt"
+            android:drawableRight="@drawable/preview"
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
-            android:drawableRight="@drawable/preview"
-            android:text="@string/service_query"/>
+            android:text="每日任务" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
-            style="@style/NormalTxt"
-            android:paddingLeft="@dimen/padding_16dp"
-            android:paddingRight="@dimen/padding_16dp"
-            android:drawableRight="@drawable/preview"
-            android:text="@string/complain_or_advice"/>
-        <include
-            layout="@layout/line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="895" />
 
     </LinearLayout>
 </LinearLayout>
+
+
+<!--layout_widthPercent、layout_heightPercent、
+layout_marginPercent、layout_marginLeftPercent、
+layout_marginTopPercent、layout_marginRightPercent、
+layout_marginBottomPercent、layout_marginStartPercent、layout_marginEndPercent。-->

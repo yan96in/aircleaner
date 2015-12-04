@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/padding_16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="400"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/service_number" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="180"
+            android:gravity="center|left"
+            android:layout_gravity="center"
+            android:text="@string/xxx" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/expander_open"
+                android:layout_weight="55"/>
+    </LinearLayout>
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- todo 下拉显示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="400"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/waiting" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="400"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/doing" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="400"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/done" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="400"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="处理结果：故障已解决" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

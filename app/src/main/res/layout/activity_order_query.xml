@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="90"
-            android:text="@string/my_service"/>
+            android:text="@string/my_order"/>
         <include
             layout="@layout/line"
             android:layout_width="match_parent"

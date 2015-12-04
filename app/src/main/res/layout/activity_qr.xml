@@ -54,13 +54,16 @@
         <include layout="@layout/line" />
 
         <TableRow android:layout_weight="316">
-            <!-- todo 扫描框，目前未设置宽高-->
+            <!-- todo 扫描框，目前未正确设置宽高-->
+
         </TableRow>
 
         <TableRow android:layout_weight="176">
 
             <Button
                 style="@style/Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
