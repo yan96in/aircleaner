@@ -11,9 +11,11 @@
     <color name="gray_lighter">#eeeeee</color>
     <color name="gray_line">#f0f0f0</color>
     <color name="red">#da251d</color>
+    <color name="red_1">#940c34</color>
+    <color name="purple_2">#ab34b6</color>
+    <color name="orange_3">#ff3723</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="yellow">#000000</color>
     <color name="blue">#0093dd</color>
     <color name="green">#000000</color>
 </resources>

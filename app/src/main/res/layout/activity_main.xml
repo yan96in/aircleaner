@@ -3,161 +3,168 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container_drawer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
->
+    android:layout_height="match_parent">
     <!-- 主内容窗格-->
     <LinearLayout
         android:id="@+id/container_root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-       >
+        android:orientation="vertical">
 
-        <android.support.percent.PercentRelativeLayout
+        <LinearLayout android:id="@+id/main_content"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="356"
-            android:background="@color/blue">
-            <!-- 加入toolbar，实现与抽屉的配合-->
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_heightPercent="15.2%"
-                app:layout_marginLeftPercent="3%"
-                app:layout_marginTopPercent="3.37%"
-                app:layout_widthPercent="8%">
+            android:layout_weight="1108"
+            android:orientation="vertical">
 
-                <ImageButton
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="356"
+                android:background="@color/blue">
+                <!-- 加入toolbar，实现与抽屉的配合-->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="15.2%"
+                    app:layout_marginLeftPercent="3%"
+                    app:layout_marginTopPercent="3.37%"
+                    app:layout_widthPercent="8%">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/menu" />
+                </android.support.v7.widget.Toolbar>
+
+
+                <TextView
+                    android:id="@+id/city_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/menu" />
-            </android.support.v7.widget.Toolbar>
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="平阳"
+                    app:layout_marginTopPercent="7.3%"
+                    app:layout_widthPercent="13.6%" />
 
+                <ImageButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_toLeftOf="@+id/share_btn"
+                    android:background="@drawable/add"
+                    app:layout_heightPercent="10%"
+                    app:layout_marginRightPercent="3.4%"
+                    app:layout_marginTopPercent="7.3%"
+                    app:layout_widthPercent="4.93%" />
 
-            <TextView
-                android:id="@+id/city_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:gravity="center"
-                android:text="平阳"
-                app:layout_marginTopPercent="7.3%"
-                app:layout_widthPercent="13.6%" />
+                <ImageButton
+                    android:id="@+id/share_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/share"
+                    app:layout_heightPercent="15.2%"
+                    app:layout_marginRightPercent="3.2%"
+                    app:layout_marginTopPercent="3.37%"
+                    app:layout_widthPercent="5.46%" />
 
-            <ImageButton
-                android:id="@+id/add_btn"
-                android:layout_width="0dp"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="室外实测数据"
+                    app:layout_marginLeftPercent="4%"
+                    app:layout_marginTopPercent="40%" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="您尚未连接室外探测设备\n系统自动切换本地官方数据"
+                    app:layout_heightPercent="0%"
+                    app:layout_marginLeftPercent="4.8%"
+                    app:layout_marginTopPercent="0%" />
+
+                <ImageView
+                    android:id="@+id/icon_weather"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentRight="true"
+                    app:layout_heightPercent="0%"
+                    app:layout_marginRightPercent="3.2%"
+                    app:layout_marginTopPercent="0%"
+                    app:layout_widthPercent="17.6%" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="@drawable/btn_shape_null"
+                    android:text="空气质量 良"
+                    app:layout_heightPercent="10.5%"
+                    app:layout_marginLeftPercent="3.7%"
+                    app:layout_marginTopPercent="73%" />
+
+                <TextView
+                    android:id="@+id/aqi"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="AQI 37"
+                    app:layout_heightPercent="0%"
+                    app:layout_marginRightPercent="3.2%"
+                    app:layout_marginTopPercent="63.2%" />
+
+                <ImageView
+                    android:id="@+id/icon_temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_toLeftOf="@+id/temperature"
+                    app:layout_heightPercent="0%"
+                    app:layout_marginRightPercent="18%"
+                    app:layout_marginTopPercent="0%"
+                    app:layout_widthPercent="2.4%" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="25℃"
+                    app:layout_heightPercent="0%"
+                    app:layout_marginRightPercent="3.2%"
+                    app:layout_marginTopPercent="80%"
+                    app:layout_widthPercent="10.6%" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_toLeftOf="@+id/share_btn"
-                android:background="@drawable/add"
-                app:layout_heightPercent="10%"
-                app:layout_marginRightPercent="3.4%"
-                app:layout_marginTopPercent="7.3%"
-                app:layout_widthPercent="4.93%" />
+                android:layout_weight="616"
+                android:background="@color/red">
 
-            <ImageButton
-                android:id="@+id/share_btn"
-                android:layout_width="0dp"
+            </android.support.percent.PercentRelativeLayout>
+            <!--todo 解决手势冲突-->
+            <ScrollView
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/share"
-                app:layout_heightPercent="15.2%"
-                app:layout_marginRightPercent="3.2%"
-                app:layout_marginTopPercent="3.37%"
-                app:layout_widthPercent="5.46%" />
+                android:layout_weight="217">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="室外实测数据"
-                app:layout_marginLeftPercent="4%"
-                app:layout_marginTopPercent="40%" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:text="您尚未连接室外探测设备\n系统自动切换本地官方数据"
-                app:layout_heightPercent="0%"
-                app:layout_marginLeftPercent="4.8%"
-                app:layout_marginTopPercent="0%" />
-
-            <ImageView
-                android:id="@+id/icon_weather"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_alignParentRight="true"
-                app:layout_heightPercent="0%"
-                app:layout_marginRightPercent="3.2%"
-                app:layout_marginTopPercent="0%"
-                app:layout_widthPercent="17.6%" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:background="@drawable/btn_shape_null"
-                android:text="空气质量 良"
-                app:layout_heightPercent="10.5%"
-                app:layout_marginLeftPercent="3.7%"
-                app:layout_marginTopPercent="73%" />
-
-            <TextView
-                android:id="@+id/aqi"
-
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:text="AQI 37"
-                app:layout_heightPercent="0%"
-                app:layout_marginRightPercent="3.2%"
-                app:layout_marginTopPercent="63.2%" />
-
-            <ImageView
-                android:id="@+id/icon_temperature"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_toLeftOf="@+id/temperature"
-                app:layout_heightPercent="0%"
-                app:layout_marginRightPercent="18%"
-                app:layout_marginTopPercent="0%"
-                app:layout_widthPercent="2.4%" />
-
-            <TextView
-                android:id="@+id/temperature"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:text="25℃"
-                app:layout_heightPercent="0%"
-                app:layout_marginRightPercent="3.2%"
-                app:layout_marginTopPercent="80%"
-                app:layout_widthPercent="10.6%" />
-
-        </android.support.percent.PercentRelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp" />
-
-        <android.support.percent.PercentRelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="616"
-            android:background="@color/red">
-
-        </android.support.percent.PercentRelativeLayout>
-        <!--todo 解决手势冲突-->
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="217"
-            >
-
-        </ScrollView>
-
+            </ScrollView>
+        </LinearLayout>
         <include
             layout="@layout/bottom"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/bottom_height" />
+            android:layout_height="0dp"
+            android:layout_weight="98"/>
+
     </LinearLayout>
+
+
     <!-- 主drawer内容-->
     <include
         android:id="@+id/drawer_main"

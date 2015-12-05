@@ -1,32 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--todo 正确显示此页面-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25" />
 
-    <View
-        android:layout_width="0dp"
+    <RadioGroup
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="AQI" />
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="PM2.5" />
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="PM10" />
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="O3" />
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="SO2" />
+
+        <RadioButton
+            style="@style/RankRadioButtonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="NO" />
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-    <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="1%"
-        app:layout_widthPercent="1%" />
-</android.support.percent.PercentFrameLayout>
+        android:layout_weight="988"> </ListView>
+</LinearLayout>

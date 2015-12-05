@@ -5,69 +5,82 @@
     android:background="@color/bottom_black"
     android:orientation="horizontal">
 
-    <RadioButton
-        android:layout_width="0dp"
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:button="@null"
-        android:drawableTop="@drawable/weather"
-        android:gravity="top|center"
-        android:paddingTop="8dp"
-        android:text="@string/weather"
-        android:textColor="@color/white" />
+        android:orientation="horizontal">
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="#504b48" />
+        <RadioButton
+            android:id="@+id/rb_weather"
 
-    <RadioButton
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/weather"
+            android:gravity="top|center"
+            android:paddingTop="8dp"
+            android:text="@string/weather"
+            android:textColor="@color/white" />
 
-        android:layout_weight="1"
-        android:button="@null"
-        android:drawableTop="@drawable/scene"
-        android:gravity="top|center"
-        android:paddingTop="8dp"
-        android:text="@string/scene"
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#504b48" />
 
-        android:textColor="@color/white" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rb_scene"
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="#504b48" />
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/scene"
+            android:gravity="top|center"
+            android:paddingTop="8dp"
+            android:text="@string/scene"
 
-    <RadioButton
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+            android:textColor="@color/white" />
 
-        android:layout_weight="1"
-        android:button="@null"
-        android:drawableTop="@drawable/rank"
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#504b48" />
 
-        android:gravity="top|center"
-        android:paddingTop="8dp"
-        android:text="@string/rank"
-        android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rb_rank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="#504b48" />
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rank"
 
-    <RadioButton
-        android:layout_width="0dp"
+            android:gravity="top|center"
+            android:paddingTop="8dp"
+            android:text="@string/rank"
+            android:textColor="@color/white" />
 
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:button="@null"
-        android:drawableTop="@drawable/me"
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#504b48" />
 
-        android:gravity="top|center"
-        android:paddingTop="8dp"
-        android:text="@string/me"
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/rb_me"
 
-        android:textColor="@color/white" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/me"
+
+            android:gravity="top|center"
+            android:paddingTop="8dp"
+            android:text="@string/me"
+
+            android:textColor="@color/white" />
+    </RadioGroup>
+
 </LinearLayout>
