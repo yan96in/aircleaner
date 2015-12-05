@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">新松</string>
     <string name="app_welcome">欢迎使用新松关怀！</string>
+    <!-- app相关-->
+    <string name="app_intro">APP说明</string>
+    <string name="version_intro">版本说明</string>
     <!-- -->
     <string name="xxx">XXXXXXXXXX</string>
     <string name="custom">自定义</string>
@@ -72,6 +75,7 @@
     <string name="area50_60">50-60m²</string>
 
     <!--设备管理-->
+
     <string name="device">设备</string>
     <string name="device_manage">设备管理</string>
     <string name="my_device">我的设备</string>
@@ -86,6 +90,7 @@
     <string name="apply_permission">申请权限</string>
     <string name="del_permission">删除授权</string>
     <!-- 服务-->
+    <string name="product_service">产品服务</string>
     <string name="my_service">我的服务</string>
     <string name="apply_service">申请服务</string>
     <string name="waiting">等待处理</string>
@@ -108,9 +113,15 @@
     <string name="credit_query">积分查询</string>
     <string name="credit_obtain">获取积分</string>
     <string name="correlation_account">关联账户</string>
+    
     <!-- 订单管理-->
     <string name="my_order">我的订单</string>
     <string name="order_number">订单编号</string>
     <string name="order_done">订单已处理</string>
     <string name="order_send">快件已发出</string>
+    <!-- 产品商店-->
+    <string name="product_store">产品商店</string>
+    <!-- -->
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
 </resources>
