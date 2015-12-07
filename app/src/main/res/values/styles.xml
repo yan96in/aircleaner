@@ -45,7 +45,7 @@
     </style>
     <!-- rank rb txt-->
     <style name="RankRadioButtonTxt">
-        <item name="android:textColor">@drawable/selector_rank_txt_color</item>
+        <item name="android:textColor">@color/selector_rank_txt_color</item>
         <item name="android:textSize">15sp</item>
         <item name="android:paddingRight">@dimen/padding_28dp</item>
         <item name="android:paddingLeft">@dimen/padding_28dp</item>
