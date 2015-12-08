@@ -8,32 +8,46 @@
         layout="@layout/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="30"/>
+            android:layout_weight="30" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
             style="@style/NormalTxt"
-            android:paddingLeft="@dimen/padding_16dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="90"
-            android:text="@string/my_service"/>
+            android:paddingLeft="@dimen/padding_16dp"
+            android:text="@string/my_service" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1074"
+            android:text="你没有任何订单，是否要。。。" />
+
         <ListView
+            android:id="@+id/service_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

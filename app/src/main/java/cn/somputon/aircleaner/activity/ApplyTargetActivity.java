@@ -1,5 +1,6 @@
 package cn.somputon.aircleaner.activity;
 
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
