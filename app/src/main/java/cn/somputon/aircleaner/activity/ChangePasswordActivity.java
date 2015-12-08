@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import cn.somputon.aircleaner.R;
 import cn.somputon.aircleaner.view.PopupView;
@@ -19,6 +20,8 @@ public class ChangePasswordActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        ((TextView)findViewById(R.id.tv_title)).setText("修改密码");
+
         oldPassword = ((EditText) findViewById(R.id.old_password));
         newPassword = ((EditText) findViewById(R.id.new_password));
         newPasswordRepeat = ((EditText) findViewById(R.id.new_password_repeat));

@@ -35,19 +35,19 @@
         </activity>
         <activity android:name=".activity.SceneUploadActivity" >
         </activity>
-        <activity android:name=".activity.ApplyTargetActivity" >
+        <activity android:name=".activity.UseTargetActivity" >
         </activity>
-        <activity android:name=".activity.ApplyEnvironmentActivity" >
+        <activity android:name=".activity.UseEnvironmentActivity" >
         </activity>
-        <activity android:name=".activity.ApplyAreaActivity" >
+        <activity android:name=".activity.UseAreaActivity" >
         </activity>
-        <activity android:name=".activity.ApplyCityActivity" >
+        <activity android:name=".activity.UseCityActivity" >
         </activity>
         <activity android:name=".activity.DeviceManageActivity" >
         </activity>
         <activity android:name=".activity.CorrelationDeviceActivity" >
         </activity>
-        <activity android:name=".activity.AskForPermissionActivity" >
+        <activity android:name=".activity.ApplyPermissionActivity" >
         </activity>
         <activity android:name=".activity.PermitAccountActivity" >
         </activity>

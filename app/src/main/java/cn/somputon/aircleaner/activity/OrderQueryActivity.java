@@ -15,10 +15,17 @@ public class OrderQueryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_query);
+
+        initView();
+    }
+
+    private void initView() {
+        ((TextView)findViewById(R.id.tv_title)).setText("订单查询");
         mOrderList= ((ListView) findViewById(R.id.order_list));
         empty= ((TextView) findViewById(R.id.empty));
         mOrderList.setEmptyView(empty);
     }
+
 
 
 }

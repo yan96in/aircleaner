@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import cn.somputon.aircleaner.R;
 import cn.somputon.aircleaner.view.PopupView;
@@ -20,7 +21,13 @@ public class SendSMSActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_sms);
+        initView();
     }
+
+    private void initView() {
+        ((TextView)findViewById(R.id.tv_title)).setText("注册");
+    }
+
 
     public void sendSMS() {
 

@@ -6,17 +6,17 @@ import android.widget.TextView;
 
 import cn.somputon.aircleaner.R;
 
-public class DeviceSceneActivity extends AppCompatActivity {
+public class ApplyPermissionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_device_scene);
+        setContentView(R.layout.activity_ask_for_permit);
         initView();
     }
 
     private void initView() {
-        ((TextView)findViewById(R.id.tv_title)).setText("设备场景");
+        ((TextView)findViewById(R.id.tv_title)).setText("申请权限");
     }
 
 }
