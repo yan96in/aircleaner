@@ -12,4 +12,6 @@ public class SetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_password);
     }
+
+
 }

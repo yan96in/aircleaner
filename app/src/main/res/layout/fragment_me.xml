@@ -26,7 +26,6 @@
         android:layout_height="0dp"
         android:layout_weight="200"
         android:background="@color/white">
-
         <cn.somputon.aircleaner.view.CircleImageView
             android:id="@+id/head_photo"
             android:layout_width="80dp"
@@ -37,7 +36,6 @@
             app:civ_border_color="#c2c2c2"
             app:civ_border_width="3dp"
             app:layout_marginLeftPercent="6.6%" />
-
         <TextView
             android:id="@+id/nickname"
             style="@style/SubTitleTxt"
@@ -48,7 +46,6 @@
             android:text="昵称"
 
             app:layout_marginLeftPercent="2.9%" />
-
         <TextView
             android:id="@+id/date"
             style="@style/NormalTxt"
@@ -60,7 +57,6 @@
             android:textSize="@dimen/txt_12sp"
             app:layout_marginLeftPercent="2.9%"
             app:layout_marginTopPercent="6%" />
-
         <TextView android:id="@+id/check"
         style="@style/NormalTxt"
         android:paddingLeft="0dp"
@@ -91,10 +87,10 @@
         android:layout_height="0dp"
         android:layout_weight="500"
         android:background="@color/white"
+        android:orientation="vertical"
+        >
 
-        android:orientation="vertical">
-
-        <TextView android:id="@+id/meirirenwu"
+        <TextView android:id="@+id/daily_task"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -103,13 +99,11 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:text="每日任务" />
-
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
+        <TextView android:id="@+id/tv_credit_mall"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -118,13 +112,11 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:text="积分商城" />
-
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
+        <TextView android:id="@+id/account_management"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -133,13 +125,11 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:text="账号管理" />
-
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
+        <TextView android:id="@+id/device_management"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -147,14 +137,12 @@
             android:drawableRight="@drawable/preview"
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
-            android:text="设备管理" />
-
+            android:text="@string/device_manage" />
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
+        <TextView android:id="@+id/order_query"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -163,13 +151,11 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:text="订单查询" />
-
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
-        <TextView
+        <TextView android:id="@+id/service_query"
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -177,7 +163,7 @@
             android:drawableRight="@drawable/preview"
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
-            android:text="服务查询" />
+            android:text="@string/service_query" />
     </LinearLayout>
 
     <View

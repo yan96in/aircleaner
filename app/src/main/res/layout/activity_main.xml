@@ -14,7 +14,7 @@
         <LinearLayout android:id="@+id/main_content"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1108"
+            android:layout_weight="1038"
             android:orientation="vertical">
 
             <android.support.percent.PercentRelativeLayout
