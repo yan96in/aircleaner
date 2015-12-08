@@ -6,20 +6,16 @@ import android.os.Bundle;
 
 import cn.somputon.aircleaner.R;
 
-public class SendSMSActivity extends AppCompatActivity {
+public class ServiceQueryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_sms);
+        setContentView(R.layout.service_query);
     }
 
-    public void sendSMS(){
-
-    }
-
-    public void gotoNext(){
-        Intent intent=new Intent(SendSMSActivity.this,SetPasswordActivity.class);
+    public void startActivity(Class<?> cls){
+        Intent intent=new Intent(ServiceQueryActivity.this,cls);
         startActivity(intent);
     }
 }

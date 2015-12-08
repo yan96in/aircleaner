@@ -23,8 +23,7 @@
 
     <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="200"
+        android:layout_height="200dp"
         android:background="@color/white">
         <cn.somputon.aircleaner.view.CircleImageView
             android:id="@+id/head_photo"
@@ -78,14 +77,12 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="84" />
+        android:layout_height="80dp"/>
 
     <LinearLayout
         style="@style/PaddingHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="500"
+        android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
         >
@@ -165,10 +162,7 @@
             android:paddingRight="@dimen/padding_16dp"
             android:text="@string/service_query" />
     </LinearLayout>
-
     <View
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="283" />
-
+        android:layout_height="285dp"/>
 </LinearLayout>

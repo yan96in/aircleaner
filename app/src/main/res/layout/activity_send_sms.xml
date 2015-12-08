@@ -87,7 +87,8 @@
                style="@style/CustomBtn"
                 android:singleLine="true"
                 android:layout_weight="230"
-                android:text="读秒倒计时"/>
+                android:text="读秒倒计时"
+                android:onClick="sendSMS"/>
         </LinearLayout>
 
         <include
@@ -104,7 +105,8 @@
             style="@style/Btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next" />
+            android:text="@string/next"
+            android:onClick="gotoNext"/>
 
         <View
             android:layout_width="match_parent"

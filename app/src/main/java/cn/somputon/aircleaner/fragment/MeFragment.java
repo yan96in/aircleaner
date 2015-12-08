@@ -1,6 +1,7 @@
 package cn.somputon.aircleaner.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -10,7 +11,12 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import cn.somputon.aircleaner.R;
+import cn.somputon.aircleaner.activity.AccountManageActivity;
+import cn.somputon.aircleaner.activity.CreditMallActivity;
+import cn.somputon.aircleaner.activity.DeviceManageActivity;
 import cn.somputon.aircleaner.activity.MainActivity;
+import cn.somputon.aircleaner.activity.OrderQueryActivity;
+import cn.somputon.aircleaner.activity.ServiceQueryActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -44,7 +50,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     }
 
     public void gotoDailyTask() {
-        Toast.makeText(getActivity(), "just tmep test", Toast.LENGTH_SHORT).show();
+        startActivity(CreditMallActivity.class);
     }
 
     @Override
@@ -54,22 +60,53 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 gotoDailyTask();
                 break;
             case R.id.tv_credit_mall:
-                gotoDailyTask();
+                gotoCreditMall();
                 break;
             case R.id.account_management:
-                gotoDailyTask();
+                gotoAccountManagement();
                 break;
             case R.id.device_management:
-                gotoDailyTask();
+                gotoDeviceManagement();
                 break;
             case R.id.order_query:
-                gotoDailyTask();
+                gotOrderQuery();
                 break;
             case R.id.service_query:
-                gotoDailyTask();
+                gotServiceQuery();
                 break;
+            case R.id.head_photo:
+                changeHeadPhoto();
             default:
                 break;
         }
+    }
+
+    private void changeHeadPhoto() {
+
+    }
+
+    public void gotoCreditMall(){
+        startActivity(CreditMallActivity.class);
+    }
+
+    public void gotoAccountManagement(){
+        startActivity(AccountManageActivity.class);
+    }
+
+    public void gotoDeviceManagement(){
+        startActivity(DeviceManageActivity.class);
+    }
+
+    public void gotOrderQuery(){
+        startActivity(OrderQueryActivity.class);
+    }
+
+    public void gotServiceQuery(){
+        startActivity(ServiceQueryActivity.class);
+    }
+
+    public void startActivity(Class<?> cls){
+        Intent intent=new Intent(getActivity(),cls);
+        startActivity(intent);
     }
 }

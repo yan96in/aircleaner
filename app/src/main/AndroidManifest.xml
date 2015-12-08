@@ -57,6 +57,20 @@
         </activity>
         <activity android:name=".activity.OrderQueryActivity" >
         </activity>
+        <activity android:name=".activity.ServiceQueryActivity" >
+        </activity>
+        <activity android:name=".activity.CreditMallActivity" >
+        </activity>
+        <activity android:name=".activity.DailyTaskActivity" >
+        </activity>
+        <activity android:name=".activity.ChangePasswordActivity" >
+        </activity>
+        <activity android:name=".activity.ProductServiceActivity" >
+        </activity>
+        <activity android:name=".activity.ApplyServiceActivity" >
+        </activity>
+        <activity android:name=".activity.ComplainSuggestActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import cn.somputon.aircleaner.R;
 
-public class DeviceManageActivity extends AppCompatActivity {
+public class ApplyServiceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_device_manage);
+        setContentView(R.layout.apply_service);
     }
 
 

@@ -10,6 +10,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--2015.15.08添加-->
+        <item name="android:background">@color/white</item>
     </style>
     <!-- 0dp的View -->
     <style name="BaseView">

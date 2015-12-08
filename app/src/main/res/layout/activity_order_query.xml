@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <include
         layout="@layout/titlebar"
@@ -33,7 +34,13 @@
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <ListView
+        <TextView android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1074"
+            style="@style/NormalTxt"
+            android:text="你没有任何订单，是否要。。。"/>
+        <ListView android:id="@+id/order_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

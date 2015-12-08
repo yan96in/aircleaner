@@ -31,7 +31,8 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:drawableRight="@drawable/preview"
-            android:text="@string/apply_service"/>
+            android:text="@string/apply_service"
+            android:onClick="applyService"/>
 
         <include
             layout="@layout/line"
@@ -45,7 +46,8 @@
             android:paddingLeft="@dimen/padding_16dp"
             android:paddingRight="@dimen/padding_16dp"
             android:drawableRight="@drawable/preview"
-            android:text="@string/service_query"/>
+            android:text="@string/service_query"
+            android:onClick="queryService"/>
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
