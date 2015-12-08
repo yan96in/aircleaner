@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import cn.somputon.aircleaner.R;
+import cn.somputon.aircleaner.view.PopupView;
 
 public class InputDetailActivity extends AppCompatActivity {
 
@@ -24,7 +25,9 @@ public class InputDetailActivity extends AppCompatActivity {
     }
 
     private void gotoMain() {
+
         Intent intent=new Intent(InputDetailActivity.this,MainActivity.class);
         startActivity(intent);
+        finish();
     }
 }

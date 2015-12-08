@@ -71,6 +71,8 @@
         </activity>
         <activity android:name=".activity.ComplainSuggestActivity" >
         </activity>
+        <activity android:name=".activity.ReportFaultRepairActivity" >
+        </activity>
     </application>
 
 </manifest>
