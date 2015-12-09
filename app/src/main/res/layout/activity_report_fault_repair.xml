@@ -47,18 +47,11 @@
             android:paddingRight="@dimen/padding_16dp"
             android:text="@string/fault_describe" />
 
-        <include
-            layout="@layout/line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <View
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@drawable/edit_text_shape"
             android:layout_weight="350" />
-        <include
-            layout="@layout/line"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
         <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
