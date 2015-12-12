@@ -18,8 +18,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="30" />
+            android:layout_height="30dp" />
 
         <include
             layout="@layout/line"
@@ -29,8 +28,7 @@
         <TextView
             style="@style/NormalTxt"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
+            android:layout_height="90dp"
             android:paddingLeft="@dimen/padding_16dp"
             android:text="@string/my_service" />
 
@@ -38,19 +36,18 @@
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-
+//todo 正确显示 无服务时的提示
         <TextView
             style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1074"
-            android:text="你没有任何订单，是否要。。。" />
+            android:text="你没有任何订单" />
 
-        <ListView
+        <ExpandableListView
             android:id="@+id/service_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </ListView>
+        </ExpandableListView>
     </LinearLayout>
 </LinearLayout>

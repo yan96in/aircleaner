@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView android:id="@+id/tv_service_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="400"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:text="@string/waiting" />
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/tv_service_ondoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="400"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:text="@string/doing" />
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/tv_service_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="400"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:text="@string/done" />
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/tv_service_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="400"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:text="处理结果：故障已解决" />
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -2,48 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <include
         layout="@layout/titlebar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
         android:orientation="vertical">
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="30"/>
+            android:layout_height="30dp" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
         <TextView
             style="@style/NormalTxt"
-            android:paddingLeft="@dimen/padding_16dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="90"
-            android:text="@string/my_order"/>
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp"
+            android:text="@string/my_order" />
+
         <include
             layout="@layout/line"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <TextView android:id="@+id/empty"
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/NormalTxt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1074"
-            style="@style/NormalTxt"
-            android:text="你没有任何订单，是否要。。。"/>
-        <ListView android:id="@+id/order_list"
+            android:text="你没有任何订单，是否要。。。" />
+
+        <ExpandableListView
+            android:id="@+id/order_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </ListView>
+        </ExpandableListView>
     </LinearLayout>
 </LinearLayout>

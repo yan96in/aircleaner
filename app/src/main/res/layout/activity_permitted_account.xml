@@ -59,7 +59,7 @@
         </TableRow>
         <include layout="@layout/line" />
 
-
+//todo 修改为swipelistview
 
         <TableRow android:layout_weight="54">
 

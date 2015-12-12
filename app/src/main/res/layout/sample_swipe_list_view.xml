@@ -1,17 +1,19 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/cn.somputon.aircleaner.view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+   >
+    //todo fixbug:Error:(6) No resource identifier found for attribute 'exampleDimension' in package 'cn.somputon.aircleaner.view'
 
-    <cn.somputon.aircleaner.view.SwipeListView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:background="#ccc"
-        android:paddingBottom="40dp"
-        android:paddingLeft="20dp"
-        app:exampleColor="#33b5e5"
-        app:exampleDimension="24sp"
-        app:exampleDrawable="@android:drawable/ic_menu_add"
-        app:exampleString="Hello, SwipeListView" />
+    <!--<cn.somputon.aircleaner.view.SwipeListView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:background="#ccc"-->
+        <!--android:paddingBottom="40dp"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--app:exampleColor="#33b5e5"-->
+        <!--app:exampleDimension="24sp"-->
+        <!--app:exampleDrawable="@android:drawable/ic_menu_add"-->
+        <!--app:exampleString="Hello, SwipeListView" />-->
 
 </FrameLayout>

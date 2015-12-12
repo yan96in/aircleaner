@@ -7,7 +7,7 @@ import android.widget.TextView;
 import cn.somputon.aircleaner.R;
 
 public class DeviceManageActivity extends AppCompatActivity {
-
+    //todo swipelistview
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
