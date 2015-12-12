@@ -3,7 +3,14 @@ package cn.somputon.aircleaner.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.xutils.view.annotation.Event;
 
 import cn.somputon.aircleaner.R;
 
@@ -21,6 +28,8 @@ public class AccountManageActivity extends AppCompatActivity {
     }
 
 
+    @Event(value = R.id.tv_change_password,
+            type = View.OnClickListener.class)
     public void gotoChangePassword() {
         startActivity(ChangePasswordActivity.class);
     }

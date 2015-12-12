@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.rb_me:
                 changeFragment(new MeFragment());
-                ((TextView) findViewById(R.id.tv_title)).setText("排名");
+                //((TextView) findViewById(R.id.tv_title)).setText("排名");
                 break;
             default:
                 break;
