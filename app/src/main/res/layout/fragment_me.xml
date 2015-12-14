@@ -17,7 +17,7 @@
             android:adjustViewBounds="true"
             app:layout_marginLeftPercent="88.6%"
             app:layout_marginTopPercent="41%"
-            android:src="@drawable/unread_3"/>
+            android:src="@drawable/msg"/>
     </android.support.percent.PercentRelativeLayout>
 
 
