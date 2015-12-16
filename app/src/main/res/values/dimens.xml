@@ -21,8 +21,10 @@
     <dimen name="txt_16sp">16sp</dimen>
     <dimen name="txt_18sp">18sp</dimen>
     <dimen name="txt_21sp">21sp</dimen>
+    <dimen name="txt_30sp">30sp</dimen>
     <dimen name="txt_33sp">33sp</dimen>
     <dimen name="txt_42sp">42sp</dimen>
+    <dimen name="txt_60sp">60sp</dimen>
     <!-- list margin-->
     <dimen name="list_height">90dp</dimen>
 </resources>

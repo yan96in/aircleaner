@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin"
+    android:layout_marginRight="@dimen/margin"
     android:orientation="horizontal">
 
-    <TextView
+    <TextView android:id="@+id/rank"
         android:layout_width="0dp"
+        android:textSize="@dimen/txt_60sp"
+        android:layout_gravity="center"
         android:layout_height="match_parent"
-        android:layout_weight="200" />
+        android:layout_weight="120" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="415"
+        android:layout_weight="460"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:orientation="vertical"
         android:weightSum="116">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="41" />
-
-        <TextView
+        <TextView android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="40" />
@@ -31,13 +34,15 @@
             android:layout_height="0dp"
             android:layout_weight="10" />
 
-        <TextView
+        <TextView android:id="@+id/province"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="25" />
     </LinearLayout>
 
-    <ImageView
+    <Button android:id="@+id/ditail_num"
+        android:background="@drawable/btn_shape_blue"
+
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="100" />

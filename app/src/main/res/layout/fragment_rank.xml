@@ -2,16 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/titlebar"
+
+    <include
+        layout="@layout/titlebar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/title_height"/>
+        android:layout_height="@dimen/title_height" />
+
     <HorizontalScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_title"
-        android:scrollbars="none"
+        android:paddingBottom="25dp"
         android:paddingTop="25dp"
-        android:paddingBottom="25dp">
+        android:scrollbars="none">
+
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,15 +71,20 @@
     <!--android:layout_weight="25" />-->
 
 
-
     <ListView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"> </ListView>
-    <include layout="@layout/line"
-        android:layout_height="wrap_content"
+        android:id="@+id/lv_rank"
         android:layout_width="match_parent"
-        android:layout_above="@+id/rg_bottom"/>
-    <LinearLayout android:id="@+id/rg_bottom"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"></ListView>
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_bottom" />
+
+    <LinearLayout
+        android:id="@+id/rg_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -97,7 +107,8 @@
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="最新" />
+                android:text="最新"
+                android:textColor="@color/selector_rank_txt_color_blue" />
 
             <RadioButton
                 android:layout_width="0dp"
@@ -109,7 +120,8 @@
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="30天" />
+                android:text="30天"
+                android:textColor="@color/selector_rank_txt_color_blue" />
 
             <RadioButton
                 android:layout_width="0dp"
@@ -119,7 +131,8 @@
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp"
-                android:text="一年" />
+                android:text="一年"
+                android:textColor="@color/selector_rank_txt_color_blue" />
         </RadioGroup>
 
         <View
@@ -130,30 +143,33 @@
         <RadioGroup
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight="200"
             android:background="@drawable/btn_shape_blue"
             android:orientation="horizontal"
-            android:layout_gravity="center"
 
             android:padding="2dp">
 
             <RadioButton
-                android:gravity="center"
-                android:padding="20dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+
                 android:layout_weight="1"
                 android:background="@drawable/left_radio_button_selector"
-                android:button="@null" />
+                android:button="@null"
+                android:gravity="center"
+                android:padding="20dp" />
 
             <RadioButton
-                android:gravity="center"
-                android:padding="20dp"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/right_radio_button_selector"
-                android:button="@null" />
+                android:button="@null"
+                android:gravity="center"
+
+                android:padding="20dp"
+                android:textColor="@color/selector_rank_txt_color_blue" />
         </RadioGroup>
     </LinearLayout>
 
