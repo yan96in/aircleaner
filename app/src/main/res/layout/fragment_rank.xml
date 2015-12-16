@@ -1,65 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-<!--todo 正确显示此页面-->
-    <View
+    android:layout_height="match_parent">
+    <include layout="@layout/titlebar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="25" />
-
-    <RadioGroup
+        android:layout_height="@dimen/title_height"/>
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="70"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:scrollbars="none"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="AQI" />
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="AQI" />
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="PM2.5" />
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="PM2.5" />
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="PM10" />
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="PM10" />
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="O3" />
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="O3" />
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="SO2" />
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="SO2" />
 
-        <RadioButton
-            style="@style/RankRadioButtonTxt"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:button="@null"
-            android:text="NO" />
-    </RadioGroup>
+            <RadioButton
+                style="@style/RankRadioButtonTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="NO" />
+        </RadioGroup>
+    </HorizontalScrollView>
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="25" />-->
+
+
 
     <ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"> </ListView>
+    <include layout="@layout/line"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="988"> </ListView>
-</LinearLayout>
+        android:layout_above="@+id/rg_bottom"/>
+    <LinearLayout android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="485"
+            android:background="@drawable/btn_shape_blue"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_radio_button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="最新" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_rank_bg_color"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="30天" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_radio_button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="一年" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="20" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="200"
+            android:background="@drawable/btn_shape_blue"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            android:padding="2dp">
+
+            <RadioButton
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_radio_button_selector"
+                android:button="@null" />
+
+            <RadioButton
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_radio_button_selector"
+                android:button="@null" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>

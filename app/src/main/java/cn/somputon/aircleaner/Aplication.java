@@ -9,7 +9,7 @@ import org.xutils.x;
 /**
  * Created by 002 on 2015/12/12.
  */
-public class Appliction extends Application {
+public class Aplication extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
