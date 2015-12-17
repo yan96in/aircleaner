@@ -10,6 +10,7 @@ import org.xutils.x;
  * Created by 002 on 2015/12/12.
  */
 public class Aplication extends android.app.Application {
+    public static boolean isLogin;
     @Override
     public void onCreate() {
         super.onCreate();

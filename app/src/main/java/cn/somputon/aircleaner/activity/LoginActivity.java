@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import cn.somputon.aircleaner.Aplication;
 import cn.somputon.aircleaner.R;
 
 public class LoginActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login(){
-        startActivity(MainActivity.class);
+        if(true){
+            startActivity(MainActivity.class);
+            Aplication.isLogin=true;
+            finish();
+        }
+
     }
 
     public void register(){

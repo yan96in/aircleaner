@@ -10,6 +10,7 @@
         android:layout_width="0dp"
         android:textSize="@dimen/txt_60sp"
         android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
         android:paddingTop="20dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
@@ -17,7 +18,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="460"
         android:layout_marginLeft="@dimen/margin"
         android:layout_marginRight="@dimen/margin"
@@ -29,6 +30,8 @@
         <TextView android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:textSize="@dimen/txt_33sp"
+            android:textColor="@color/black"
             android:layout_weight="40" />
 
         <View
@@ -38,6 +41,8 @@
 
         <TextView android:id="@+id/province"
             android:layout_width="match_parent"
+            android:textSize="@dimen/txt_21sp"
+            android:textColor="@color/gray"
             android:layout_height="0dp"
             android:layout_weight="25" />
     </LinearLayout>

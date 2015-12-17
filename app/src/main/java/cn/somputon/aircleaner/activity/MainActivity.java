@@ -10,11 +10,13 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import cn.somputon.aircleaner.R;
 import cn.somputon.aircleaner.fragment.MeFragment;
@@ -30,17 +32,23 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     //private RadioGroup radioGroup;
     private RadioButton rbWeater, rbScene, rbRank, rbMe;
     private FragmentManager fragmentManager;
-
+   // private boolean isMain;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = ((Toolbar) findViewById(R.id.toolbar));
         setSupportActionBar(toolbar);
+        initData();
         initView();
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+    }
+
+    private void initData() {
+       // isMain=true;
     }
 
     private void initView() {
@@ -72,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
 
 
         fragmentManager = getSupportFragmentManager();
+
         // radioGroup= ((RadioGroup) findViewById(R.id.rg_bottom));
         ((RadioGroup) findViewById(R.id.rg_bottom)).setOnCheckedChangeListener(this);
     }
@@ -122,10 +131,34 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         }
 
     }
-
+String backStack;
     public void changeFragment(Fragment fragment) {
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentTransaction fragmentTransaction;
+
+//        if(isMain){
+            fragmentTransaction = fragmentManager.beginTransaction().addToBackStack(backStack);
+//        }else {
+//            //todo 把isMain合理的置成true,正确实现两次back键返回冲突的逻辑;
+//            fragmentTransaction = fragmentManager.beginTransaction();
+//        }
         fragmentTransaction.replace(R.id.main_content, fragment);
         fragmentTransaction.commit();
     }
+
+   /* 按两次退出
+    private long mExitTime;
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if ((System.currentTimeMillis() - mExitTime) < 2000) {
+                System.exit(0);
+            } else {
+                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_LONG).show();
+                mExitTime = System.currentTimeMillis();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }*/
 }

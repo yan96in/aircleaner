@@ -71,6 +71,9 @@ public class RankAdapter extends BaseAdapter {
         }else if(Integer.valueOf(city.getDetailNum())>=100){
             colorList=ColorStateList.valueOf(convertView.getResources().getColor(R.color.green));
         }
+        else if(Integer.valueOf(city.getDetailNum())>=50){
+            colorList=ColorStateList.valueOf(convertView.getResources().getColor(R.color.green));
+        }else ;
         //ditailNum.setBackgroundTintList(colorList);//Wrong!必须使用ViewCompat
         ViewCompat.setBackgroundTintList(ditailNum,colorList);
 
