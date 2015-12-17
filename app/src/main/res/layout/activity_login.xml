@@ -64,7 +64,7 @@
         </TableRow>
 
         <include layout="@layout/line" />
-<!--todo-->
+<!--todo -->
         <TableRow android:layout_weight="60">
 
             <Button
@@ -105,7 +105,7 @@
                 android:gravity="center"
                 android:text="其他方式登录" />
         </TableRow>
-<!--todo-->
+<!--todo -->
 
     </TableLayout>
 </LinearLayout>
