@@ -9,8 +9,10 @@
     <TextView android:id="@+id/rank"
         android:layout_width="0dp"
         android:textSize="@dimen/txt_60sp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
         android:layout_gravity="center"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="120" />
 
     <LinearLayout
@@ -41,10 +43,11 @@
     </LinearLayout>
 <!--backgroundTint 配合background使用可以减少style的类型-->
     <Button android:id="@+id/ditail_num"
-        android:background="@drawable/shape_blue"
-        android:backgroundTint="@color/gray_lighter"
+        android:background="@drawable/shape_semi"
+        android:backgroundTint="@color/red_1"
         android:layout_width="0dp"
         android:textColor="@color/white"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_weight="100" />
 

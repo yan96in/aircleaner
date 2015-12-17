@@ -3,7 +3,7 @@
     android:shape="rectangle">
     <!--todo 半圆-->
     <solid android:color="@color/colorAccent" />
-    <size android:height="30dp" />
+    <size android:height="60dp" />
     <corners
         android:bottomRightRadius="30dp"
         android:bottomLeftRadius="30dp"
