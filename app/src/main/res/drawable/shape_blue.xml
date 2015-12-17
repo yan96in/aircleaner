@@ -7,5 +7,4 @@
         android:color="@color/black" />-->
     <solid android:color="@color/blue" />
     <corners android:radius="@dimen/radius_btn_10" />
-    <padding />
 </shape>

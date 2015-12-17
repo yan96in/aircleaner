@@ -103,7 +103,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="485"
-            android:background="@drawable/btn_shape_blue"
+            android:background="@drawable/shape_blue"
             android:orientation="horizontal"
             android:padding="2dp">
 
@@ -111,7 +111,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/left_radio_button_selector"
+                android:background="@drawable/selector_left_radio_button"
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp"
@@ -135,7 +135,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/right_radio_button_selector"
+                android:background="@drawable/selector_right_radio_button"
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp"
@@ -153,7 +153,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="200"
-            android:background="@drawable/btn_shape_blue"
+            android:background="@drawable/shape_blue"
             android:orientation="horizontal"
 
             android:padding="2dp">
@@ -163,7 +163,7 @@
                 android:layout_height="match_parent"
 
                 android:layout_weight="1"
-                android:background="@drawable/left_radio_button_selector"
+                android:background="@drawable/selector_left_radio_button"
                 android:button="@null"
                 android:gravity="center"
                 android:padding="20dp" />
@@ -172,7 +172,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/right_radio_button_selector"
+                android:background="@drawable/selector_right_radio_button"
                 android:button="@null"
                 android:gravity="center"
 

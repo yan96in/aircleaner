@@ -39,12 +39,13 @@
             android:layout_height="0dp"
             android:layout_weight="25" />
     </LinearLayout>
-
+<!--backgroundTint 配合background使用可以减少style的类型-->
     <Button android:id="@+id/ditail_num"
-        android:background="@drawable/btn_shape_blue"
-
+        android:background="@drawable/shape_blue"
+        android:backgroundTint="@color/gray_lighter"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
         android:layout_weight="100" />
 
     <View
