@@ -69,16 +69,24 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="0dp"-->
     <!--android:layout_weight="25" />-->
-
-
-    <ListView
-        android:id="@+id/lv_rank"
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scrollView"></ListView>
+        android:layout_below="@+id/scrollView"
+        android:layout_above="@+id/line">
+
+        <ListView
+            android:id="@+id/lv_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
 
     <include
         layout="@layout/line"
+        android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rg_bottom" />
