@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AirCleaner.iml" filepath="$PROJECT_DIR$/AirCleaner.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/droidlib/droidlib.iml" filepath="$PROJECT_DIR$/droidlib/droidlib.iml" />
     </modules>
   </component>
 </project>

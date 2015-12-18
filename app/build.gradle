@@ -23,7 +23,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
 
-    useLibrary 'org.apache.http.legacy'
+    //useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {

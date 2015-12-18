@@ -1,1 +1,1 @@
-include ':app', ':droidlib'
+include ':app'
