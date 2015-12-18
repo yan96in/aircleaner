@@ -47,7 +47,6 @@ public class LoginActivity extends AppCompatActivity {
     public void loginFromWeixin(){
 
     }
-
     public void startActivity(Class<?> cls){
         Intent intent=new Intent(LoginActivity.this,cls);
         startActivity(intent);
