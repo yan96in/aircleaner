@@ -72,7 +72,7 @@
     </style>
     <!-- -->
     <style name="CustomBtn">
-        <item name="android:background">@drawable/shape_null</item>
+        <item name="android:background">@drawable/shape_white</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/txt_18sp</item>
     </style>
