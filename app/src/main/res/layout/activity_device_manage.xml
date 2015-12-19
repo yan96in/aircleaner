@@ -11,9 +11,10 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="60"
-        android:background="@color/light_gray">
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:paddingBottom="@dimen/padding_16dp"
+        android:paddingTop="@dimen/padding_16dp">
 
         <TextView
             android:id="@+id/add"
@@ -33,184 +34,175 @@
             android:drawableRight="@drawable/add" />
     </RelativeLayout>
 
-
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="@dimen/margin"
-        android:layout_marginRight="@dimen/margin"
-        android:layout_weight="686">
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_33dp"
+        android:paddingRight="@dimen/padding_33dp"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
 
-        <TableRow android:layout_weight="28" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="54">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp">
 
             <TextView
                 style="@style/NormalTxt"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="270"
                 android:text="@string/my_device" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
+        </LinearLayout>
 
-        <include layout="@layout/line" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TableRow android:layout_weight="54">
+        <cn.somputon.aircleaner.view.SwipeListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </cn.somputon.aircleaner.view.SwipeListView>
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp">
 
             <TextView
                 style="@style/NormalTxt"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="480"
-                android:text="@string/xxx" />
-            <!-- todo 修正按钮大小 改成动画显示-->
-            <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="155"
-                android:background="@color/red"
-                android:text="@string/delete" />
-        </TableRow>
-
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="54">
-
-            <TextView
-                style="@style/NormalTxt"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
                 android:layout_weight="270"
+
                 android:text="@string/permit_level1" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
+        </LinearLayout>
 
-        <include layout="@layout/line" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TableRow android:layout_weight="54">
+        <cn.somputon.aircleaner.view.SwipeListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </cn.somputon.aircleaner.view.SwipeListView>
 
-            <TextView
-                style="@style/NormalTxt"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="270"
-                android:text="@string/xxx" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
-
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="54">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp">
 
             <TextView
                 style="@style/NormalTxt"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="270"
                 android:text="@string/permit_level2" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
+        </LinearLayout>
 
-        <include layout="@layout/line" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TableRow android:layout_weight="54">
+        <cn.somputon.aircleaner.view.SwipeListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </cn.somputon.aircleaner.view.SwipeListView>
 
-            <TextView
-                style="@style/NormalTxt"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="270"
-                android:text="@string/xxx" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
-
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="54">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp">
 
             <TextView
                 style="@style/NormalTxt"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="270"
                 android:text="@string/permit_level3" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
+        </LinearLayout>
 
-        <include layout="@layout/line" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TableRow android:layout_weight="54">
+        <cn.somputon.aircleaner.view.SwipeListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-            <TextView
-                style="@style/NormalTxt"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="270"
-                android:text="@string/xxx" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
-
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="54">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_16dp"
+            android:paddingTop="@dimen/padding_16dp">
 
             <TextView
                 style="@style/NormalTxt"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="270"
                 android:text="@string/unauth" />
+        </LinearLayout>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="365" />
-        </TableRow>
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <include layout="@layout/line" />
+        <Button
+            style="@style/Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/sure" />
 
-        <TableRow android:layout_weight="84">
+    </LinearLayout>
 
-            <Button
-                style="@style/Btn"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/sure" />
-        </TableRow>
-
-        <TableRow android:layout_weight="88" />
-    </TableLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="88dp" />
 </LinearLayout>
