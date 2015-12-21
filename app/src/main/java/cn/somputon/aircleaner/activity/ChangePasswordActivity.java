@@ -32,14 +32,14 @@ public class ChangePasswordActivity extends AppCompatActivity {
         newPWValue=newPassword.getText().toString().trim();
         newPWRValue=newPasswordRepeat.getText().toString().trim();
         if(oldPWValue!=null&&false){
-            new PopupView("旧密码错误请重新填写！").popup(this);
+            new PopupView(this).popup("旧密码错误请重新填写！");
         }
         if (newPWRValue!=null&&newPWValue!=null){
             if(newPWRValue!=newPWValue){
-                new PopupView("新密码验证错误请重新填写！").popup(this);
+                new PopupView(this).popup("新密码验证错误请重新填写！");
             }else {
                 //// TODO: 2015/12/8 ChangePaswwordCommit
-                new PopupView("修改密码成功！").popup(this);
+                new PopupView(this).popup("修改密码成功！");
             }
         }
     }

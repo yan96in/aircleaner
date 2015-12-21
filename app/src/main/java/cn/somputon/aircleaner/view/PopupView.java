@@ -10,17 +10,15 @@ import android.widget.TextView;
 
 import cn.somputon.aircleaner.R;
 
-/**
- * Created by 002 on 2015/12/8.
- */
-public class PopupView {
-    private String hint;
 
-    public PopupView(String hint) {
-        this.hint = hint;
+public class PopupView {
+    private Context context;
+
+    public PopupView(Context context) {
+        this.context = context;
     }
 
-    public void popup(Context context) {
+    public void popup(String hint) {
         LinearLayout layout = new LinearLayout(context);
         View popupView = layout.inflate(context, R.layout.a_base_popup_window, null);
 

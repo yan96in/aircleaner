@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import cn.somputon.aircleaner.Aplication;
 import cn.somputon.aircleaner.R;
+import cn.somputon.aircleaner.view.PopupView;
 
 public class LoginActivity extends AppCompatActivity {
     @Override
@@ -22,7 +23,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login() {
+
         if (true) {
+            new PopupView(this).popup("登录成功！");
             startActivity(MainActivity.class);
             Aplication.isLogin = true;
             finish();
