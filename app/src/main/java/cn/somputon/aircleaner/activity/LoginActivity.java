@@ -3,6 +3,7 @@ package cn.somputon.aircleaner.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import cn.somputon.aircleaner.Aplication;
@@ -17,38 +18,41 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        ((TextView)findViewById(R.id.tv_title)).setText("somputon新松");
+        ((TextView) findViewById(R.id.tv_title)).setText("somputon新松");
     }
 
-    public void login(){
-        if(true){
+    public void login() {
+        if (true) {
             startActivity(MainActivity.class);
-            Aplication.isLogin=true;
+            Aplication.isLogin = true;
             finish();
         }
 
     }
 
-    public void register(){
+    public void register(View v) {
         startActivity(RegisterActivity.class);
     }
 
-    public void findPassword(){
-        //todo
-        startActivity(RegisterActivity.class);
-    }
-
-    public void loginFromWeibo(){
+    public void findPassword(View v) {
+        //todo 找回密码页面
 
     }
-    public void loginFromQQ(){
+
+    public void loginFromWeibo(View v) {
 
     }
-    public void loginFromWeixin(){
+
+    public void loginFromQQ(View v) {
 
     }
-    public void startActivity(Class<?> cls){
-        Intent intent=new Intent(LoginActivity.this,cls);
+
+    public void loginFromWeixin(View v) {
+
+    }
+
+    public void startActivity(Class<?> cls) {
+        Intent intent = new Intent(LoginActivity.this, cls);
         startActivity(intent);
     }
 }

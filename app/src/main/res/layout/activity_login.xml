@@ -9,27 +9,33 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height" />
 
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/margin"
-        android:layout_marginRight="@dimen/margin">
+        android:layout_marginRight="@dimen/margin"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_16dp"
+        android:paddingRight="@dimen/padding_16dp">
 
-        <TableRow android:layout_weight="8">
 
-        </TableRow>
+        <TextView
+            style="@style/SubTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:gravity="center"
+            android:text="@string/app_welcome" />
 
-        <TableRow android:layout_weight="120">
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <TextView
-                style="@style/SubTitleTxt"
-                android:layout_weight="1"
-                android:text="@string/app_welcome" />
-        </TableRow>
-
-        <include layout="@layout/line" />
-
-        <TableRow android:layout_weight="60">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90">
 
             <TextView
                 style="@style/NormalTxt"
@@ -38,15 +44,23 @@
                 android:layout_weight="180"
                 android:text="@string/phone_number" />
 
-            <TextView
+            <EditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="455" />
-        </TableRow>
+                android:layout_weight="455"
+                android:background="@null"
+                android:inputType="phone" />
+        </LinearLayout>
 
-        <include layout="@layout/line" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TableRow android:layout_weight="60">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90">
 
             <TextView
                 style="@style/NormalTxt"
@@ -60,52 +74,99 @@
                 android:layout_height="match_parent"
                 android:layout_weight="455"
                 android:background="@null"
+                android:inputType="textPassword"
                 android:singleLine="true" />
-        </TableRow>
+        </LinearLayout>
 
-        <include layout="@layout/line" />
-<!--todo -->
-        <TableRow android:layout_weight="60">
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="180"
-                android:background="@null"
-                android:text="@string/register"
-                android:onClick="register"/>
-
-            <ImageView />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="180"
-                android:background="@null"
-                android:text="忘记密码"
-                android:onClick="findPassword"/>
-        </TableRow>
-
-        <TableRow android:layout_weight="160">
-
-            <Button
-                style="@style/Btn"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="@string/login"
-                android:onClick="login"/>
-        </TableRow>
-
-        <TableRow android:layout_weight="60">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="54"
+            android:orientation="horizontal">
 
             <TextView
-                style="@style/NormalTxt"
-                android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="其他方式登录" />
-        </TableRow>
-<!--todo -->
+                android:onClick="register"
+                android:paddingRight="@dimen/padding_16dp"
+                android:text="@string/register" />
 
-    </TableLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="findPassword"
+                android:text="忘记密码" />
+        </LinearLayout>
+
+        <Button
+            style="@style/Btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="90"
+            android:onClick="login"
+            android:text="@string/login" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:text="其他方式登录" />
+        <!--todo -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+
+            <cn.somputon.aircleaner.view.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/login_qq"
+                android:onClick="loginFromWeibo"
+                android:src="@drawable/weibo" />
+
+            <cn.somputon.aircleaner.view.CircleImageView
+                android:id="@+id/login_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="loginFromQQ"
+                android:src="@drawable/qq" />
+
+
+            <cn.somputon.aircleaner.view.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_toRightOf="@id/login_qq"
+                android:onClick="loginFromWeixin"
+                android:src="@drawable/wechat" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="295" />
+    </LinearLayout>
 </LinearLayout>
