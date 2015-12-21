@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import cn.somputon.aircleaner.Aplication;
+import cn.somputon.aircleaner.Applic;
 import cn.somputon.aircleaner.R;
 import cn.somputon.aircleaner.view.PopupView;
 
@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         if (true) {
             new PopupView(this).popup("登录成功！");
             startActivity(MainActivity.class);
-            Aplication.isLogin = true;
+            Applic.isLogin = true;
             finish();
         }
 

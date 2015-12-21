@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="@dimen/margin"
-                android:layout_toLeftOf="@id/login_qq"
+                android:layout_toLeftOf="@+id/login_qq"
                 android:onClick="loginFromWeibo"
                 android:src="@drawable/weibo" />
 
