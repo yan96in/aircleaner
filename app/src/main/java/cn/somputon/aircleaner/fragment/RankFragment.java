@@ -61,6 +61,7 @@ public class RankFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_rank, null);
         title = ((TextView) view.findViewById(R.id.tv_title));
         title.setText("排名");
+        //view.findViewById(R.id.aqi);
         srl = ((SwipeRefreshLayout) view.findViewById(R.id.refresh_layout));
         srl.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

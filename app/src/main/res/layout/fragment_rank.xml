@@ -8,63 +8,61 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/title_height" />
 
-    <HorizontalScrollView
+    <LinearLayout
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_title"
-        android:paddingBottom="25dp"
-        android:paddingTop="25dp"
-        android:scrollbars="none">
+        android:layout_margin="@dimen/margin">
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/aqi"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="AQI" />
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/pm2_5"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="PM2.5" />
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/pm10"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="PM10" />
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/o3"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="O3" />
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/so2"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="SO2" />
 
-            <RadioButton
-                style="@style/RankRadioButtonTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:button="@null"
+            <RadioButton android:id="@+id/no"
+                style="@style/RankTopRadioButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="NO" />
         </RadioGroup>
-    </HorizontalScrollView>
+    </LinearLayout>
     <!--<View-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="0dp"-->
