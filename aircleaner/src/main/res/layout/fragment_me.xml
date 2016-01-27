@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lighter"
+    android:orientation="vertical">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="124">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="5%"
+            app:layout_heightPercent="30%"
+            android:adjustViewBounds="true"
+            app:layout_marginLeftPercent="88.6%"
+            app:layout_marginTopPercent="41%"
+            android:src="@drawable/msg"/>
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white">
+        <cn.somputon.aircleaner.view.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android"
+            app:civ_border_color="#c2c2c2"
+            app:civ_border_width="3dp"
+            app:layout_marginLeftPercent="6.6%" />
+        <TextView
+            android:id="@+id/nickname"
+            style="@style/SubTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="昵称"
+
+            app:layout_marginLeftPercent="2.9%" />
+        <TextView
+            android:id="@+id/date"
+            style="@style/NormalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nickname"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="2015.12.03"
+            android:textSize="@dimen/txt_12sp"
+            app:layout_marginLeftPercent="2.9%"
+            app:layout_marginTopPercent="6%" />
+        <TextView android:id="@+id/check"
+        style="@style/NormalTxt"
+        android:paddingLeft="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已签到"
+        app:layout_marginLeftPercent="52%"
+        app:layout_marginTopPercent="60%" />
+        <TextView
+            style="@style/NormalTxt"
+            android:paddingLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分:99"
+            app:layout_marginLeftPercent="74%"
+            app:layout_marginTopPercent="60%" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <LinearLayout
+        style="@style/PaddingHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView android:id="@+id/daily_task"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="每日任务" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tv_credit_mall"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="积分商城" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/account_management"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="账号管理" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/device_management"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="@string/device_manage" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/order_query"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="订单查询" />
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/service_query"
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/preview"
+            android:paddingLeft="@dimen/padding_16dp"
+            android:paddingRight="@dimen/padding_16dp"
+            android:text="@string/service_query" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="285dp"/>
+</LinearLayout>

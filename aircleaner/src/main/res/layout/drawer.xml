@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lighter"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="67" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="235"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/padding_33dp">
+
+        <cn.somputon.aircleaner.view.CircleImageView
+            android:id="@+id/menu_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/android"
+            app:civ_border_color="#c2c2c2"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/nickname"
+            style="@style/NormalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="90"
+            android:text="昵称"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="32" />
+
+
+    <TextView
+        style="@style/NormalTxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="84"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingRight="@dimen/padding_33dp"
+        android:text="@string/add_machine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49" />
+
+    <TextView
+        style="@style/NormalTxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="84"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingRight="@dimen/padding_33dp"
+        android:text="@string/device_manage" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="49" />
+
+    <TextView
+        style="@style/NormalTxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="84"
+        android:text="" />
+
+    <include
+        layout="@layout/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="410"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/padding_33dp">
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="84"
+            android:gravity="center"
+            android:text="@string/product_store" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="84"
+            android:gravity="center"
+
+            android:text="@string/product_service" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="84"
+            android:gravity="center"
+
+            android:text="APP说明" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="84"
+            android:gravity="center"
+
+            android:text="意见反馈" />
+
+        <include
+            layout="@layout/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/NormalTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="84"
+            android:gravity="center"
+
+            android:text="版本说明" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="257" />
+
+</LinearLayout>

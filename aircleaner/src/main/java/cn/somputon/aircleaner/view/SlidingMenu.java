@@ -2,6 +2,7 @@ package cn.somputon.aircleaner.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.telephony.SmsManager;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.MotionEvent;
@@ -141,5 +142,4 @@ public class SlidingMenu extends HorizontalScrollView {
             openMenu();
         }
     }
-
 }

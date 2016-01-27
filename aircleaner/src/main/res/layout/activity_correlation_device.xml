@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin">
+
+        <TableRow android:layout_weight="30"/>
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+
+                android:text="@string/device_name" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:text="@string/account_premit" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:text="@string/device_scene" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+
+
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:text="@string/use_environment" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:text="@string/use_area" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+
+        <TableRow android:layout_weight="54">
+
+            <TextView
+                style="@style/NormalTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="270"
+                android:text="@string/use_city" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="365" />
+        </TableRow>
+
+        <include layout="@layout/line" />
+        <TableRow android:layout_weight="74"/>
+
+        <TableRow android:layout_weight="46">
+            <Button
+                style="@style/Btn"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/apply_permission" />
+        </TableRow>
+        <TableRow android:layout_weight="46">
+            <Button
+                style="@style/Btn"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/del_device" />
+        </TableRow>
+
+        <TableRow android:layout_weight="279" />
+    </TableLayout>
+</LinearLayout>
